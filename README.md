@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://lysitheadarkknight.github.io/FourCardFeatureSectionMaster/)
+- Solution URL: (https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub)
+- Live Site URL: (https://lysitheadarkknight.github.io/PingSingleColumn/)
 
 ## My process
 
