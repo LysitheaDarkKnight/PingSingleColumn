@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --off-white-color: hsl(36, 100%, 99%);
+  --primary-blue-color: hsl(223, 87%, 63%);
+  --secondary-blue-color: hsl(223, 100%, 88%);
+  --secondary-red-color: hsl(354, 100%, 66%);
+  --gray-color: hsl(0, 0%, 59%);
+  --dark-blue-color: hsl(209, 33%, 12%);
+}
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animation-up {
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+.animation-down {
+  animation: slideInFromBottom 1s ease-in-out;
+}
+
+.success, .error {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: #28a745;
+}
+
+.error {
+  color: #EF5350;
+}
+.error input {
+  border-color: #EF5350;
+}
+
+.container {
+  max-width: 40rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.container .title {
+  display: grid;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 0.7rem;
+}
+.container .title .logo, .container .title p, .container .title h1 {
+  margin: auto;
+}
+.container .title .logo {
+  margin-top: 4rem;
+}
+.container .title h1 {
+  color: var(--gray-color);
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.container .title h1 span {
+  color: var(--dark-blue-color);
+  font-weight: 700;
+}
+.container form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 1rem;
+}
+.container form .email {
+  width: 70%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: var(--gray-color) 1px solid;
+}
+.container form .email:focus {
+  outline: var(--dark-blue-color) 1px solid;
+}
+.container form .btn {
+  width: 30%;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--off-white-color);
+  background-color: var(--primary-blue-color);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(77, 111, 151, 0.16), 0 6px 6px rgba(77, 111, 151, 0.19);
+  transition: all 0.6s ease-in;
+}
+.container form .btn:hover {
+  opacity: 0.8;
+}
+.container .dashboard {
+  display: block;
+  max-width: 100%;
+  margin-top: 5rem;
+}
+.container .social {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.container .social a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--primary-blue-color);
+  border: 1px #ccc solid;
+  border-radius: 50%;
+  transition: transform 0.6s ease-in;
+  width: 2rem;
+  height: 2rem;
+}
+.container .social a:hover {
+  border: 1px var(--primary-blue-color) solid;
+  transform: rotate(360deg);
+  color: var(--off-white-color);
+  background-color: var(--primary-blue-color);
+}
+.container .copyright {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: var(--gray-color);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .container .title h1 {
+    color: var(--gray-color);
+    font-weight: 300;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .container .title p {
+    font-size: 1rem;
+  }
+  .container form {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 1rem;
+  }
+  .container form .email {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: var(--gray-color) 1px solid;
+  }
+  .container form .btn {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--off-white-color);
+    background-color: var(--primary-blue-color);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .container .social {
+    margin-top: 7rem;
+  }
+}/*# sourceMappingURL=style.css.map */
